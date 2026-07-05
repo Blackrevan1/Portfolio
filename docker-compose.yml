@@ -4,6 +4,6 @@ services:
     image: krishna-portfolio
     container_name: krishna-portfolio
     ports:
-      # host:container  ->  Cloudflare Tunnel points at http://localhost:3001
-      - "3001:80"
+      # host:container  ->  Cloudflare Tunnel points at http://localhost:3002
+      - "3002:80"
     restart: unless-stopped
