@@ -1,0 +1,9 @@
+services:
+  portfolio:
+    build: .
+    image: krishna-portfolio
+    container_name: krishna-portfolio
+    ports:
+      # host:container  ->  Cloudflare Tunnel points at http://localhost:8080
+      - "8080:80"
+    restart: unless-stopped
